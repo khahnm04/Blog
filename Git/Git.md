@@ -10,34 +10,68 @@
 
 
 ## **2. Các thuật ngữ trong __`Git`__**
-```
-Working directory     Staging area         Repository
-       |                   |                    |
-       |----- git add ---->|                    |
-       |                   |---- git commit --->|
-       |                   |                    |
-       |                   |                    |
-       |                   |                    |
-```
-- Working directory (Thư mục làm việc): Khu vực chứa toàn bộ mã nguồn của dự án mà chúng ta đang làm việc. Nó chính là thư mục bạn mở trong IDE (như IntelliJ, VS Code) hoặc trình chỉnh sửa văn bản (text editor).
+ ```
+ Working directory     Staging area         Repository
+        |                   |                    |
+        |----- git add ---->|                    |
+        |                   |---- git commit --->|
+        |                   |                    |
+        |                   |                    |
+        |                   |                    |
+ ```
+- __`Working directory`__ (Thư mục làm việc): Khu vực chứa toàn bộ mã nguồn của dự án mà chúng ta đang làm việc. Nó chính là thư mục bạn mở trong IDE (như IntelliJ, VS Code) hoặc trình chỉnh sửa văn bản (text editor).
   
-- Staging area (Khu vực sắp xếp): Staging area (Khu vực sắp xếp): Đây là nơi tạm lưu các thay đổi của file trước khi bạn chính thức lưu vào lịch sử Git. Bạn có thể xem nó như một bản nháp, nơi bạn chuẩn bị các thay đổi trước khi "chốt" chúng vào kho lưu trữ (repository).
-- Repository (Kho lưu trữ): Đây là nơi lưu trữ toàn bộ mã nguồn và lịch sử các phiên bản của dự án. Nó giúp bạn theo dõi, quay lại các phiên bản trước và làm việc nhóm dễ dàng hơn.
-  > - Ví dụ:
+- __`Staging area`__ (Khu vực sắp xếp): Staging area (Khu vực sắp xếp): Đây là nơi tạm lưu các thay đổi của file trước khi bạn chính thức lưu vào lịch sử Git. Bạn có thể xem nó như một bản nháp, nơi bạn chuẩn bị các thay đổi trước khi "chốt" chúng vào kho lưu trữ (repository).
+- __`Repository`__ (Kho lưu trữ): Đây là nơi lưu trữ toàn bộ mã nguồn và lịch sử các phiên bản của dự án. Nó giúp bạn theo dõi, quay lại các phiên bản trước và làm việc nhóm dễ dàng hơn.
+  > **Ví dụ:**
   >   - Working directory (Thư mục làm việc):
   >     Bạn bắt đầu code cả trang Giới thiệu và trang Liên hệ trong IDE của mình (VS Code, IntelliJ,...). Đây là nơi bạn trực tiếp chỉnh sửa nội dung các file HTML.
-  >
   >   - Staging area (Khu vực sắp xếp):
   >     Sau khi code xong, bạn cảm thấy cả hai trang đều tạm ổn, nên dùng lệnh __`git add`__ để đưa cả file gioi-thieu.html và file lien-he.html vào vùng staging. Đây là nơi bạn chuẩn bị mọi thứ trước khi "đóng gói" lại.
-  > 
   >   - Khách hàng kiểm tra và phản hồi. Họ bảo rằng trang Giới thiệu đã OK, không cần chỉnh sửa gì. Nhưng trang Liên hệ thì chưa ổn, cần sửa lại nội dung.
-  >
   >   - Quay lại Working directory để chỉnh sửa:
   >     Bạn quay lại thư mục làm việc để chỉnh sửa lại file lien-he.html theo góp ý của khách hàng. Sau khi sửa xong, bạn dùng __`git add`__ lien-he.html để cập nhật bản sửa mới lên vùng staging.
-  >
   >   - Staging area cập nhật:
   >     Lúc này vùng staging đã có: gioi-thieu.html (vẫn là bản cũ đã ổn) và lien-he.html (bản mới vừa sửa)
-  >
   >   - Repository (Kho lưu trữ):
   >     Cuối cùng, bạn dùng __`git commit`__ để tạo một phiên bản mới chứa cả hai file. Git sẽ lưu lại toàn bộ lịch sử thay đổi, bao gồm cả lần bạn sửa lại trang Liên hệ. Nhờ vậy, bạn có thể dễ dàng xem lại hay quay về phiên bản trước nếu cần.
 
+## **3. Các câu lệnh __`Git`__**
+- __`git --version`__
+  - Xem phiên bản hiện tại đang được cài trên máy tính
+
+- __`git init`__
+  - Khởi tạo repository (kho lưu trữ) cho dự án.
+  - Chạy câu lệnh trong thư mục gốc của dự án.
+  - Mỗi một dự án phải khởi tạo 1 repository (kho lưu trữ) cho dữ án
+  - Thư mục .git là một thư mục ẩn nằm trong thư mục gốc của mỗi repository Git trên máy tính của bạn. Đây là nơi Git lưu trữ tất cả dữ liệu quan trọng để theo dõi các thay đổi trong mã nguồn, như lịch sử các lần commit, cấu hình của repository, và thông tin khác liên quan đến phiên bản của dự án.
+- __`git status`__
+  - Để xem trạng thái của những file đã được thay đổi trong dự án.
+- __`git add ten_file`__ hoặc __`git add .`__
+  - Chuyển các file đã thay đổi từ vùng Working sang vùng Staging
+  - Staging area có tác dụng sắp xếp lại những file đã thêm vào.
+  - __`git add .`__ để đẩy tất cả các file ở vùng __`working directory`__ sang vùng __`Staging area`__
+- __`git commit -m "Nội dung… "`__
+  - Chuyển các file từ vùng Staging sang vùng Repository
+  - Repository có tác dụng tạo ra 1 phiên bản mới.
+- __`git log`__
+  - Xem lại lịch sử các commit.
+  - ommit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới.
+- __`git show commit_id`__
+  - Dùng để xem chi tiết một commit.
+- __`git diff`__
+  - Xem sự thay đổi của một file sau khi chỉnh sửa.
+  - Điều kiện là file đó vẫn đang ở khu vực Working.
+- __`git checkout -- ten_file`__
+  - Bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu.
+  - Áp dụng cho file đang ở vùng Working.
+- __`gitk`__
+  - Mở dashboard xem trực quan hơn.
+- __`git reset ten_file`__
+  - Chuyển file đó từ vùng Staging trở lại vùng Working.
+- __`git reset --soft commit_id`__
+  - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit.
+  - Tức là từ Repository về lại Staging.
+- __`git reset --mixed commit_id`__
+  - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git add.
+  - Tức là từ Repository về lại Working.
