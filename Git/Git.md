@@ -37,41 +37,42 @@
   >     Cuối cùng, bạn dùng __`git commit`__ để tạo một phiên bản mới chứa cả hai file. Git sẽ lưu lại toàn bộ lịch sử thay đổi, bao gồm cả lần bạn sửa lại trang Liên hệ. Nhờ vậy, bạn có thể dễ dàng xem lại hay quay về phiên bản trước nếu cần.
 
 ## **3. Các câu lệnh __`Git`__**
-- __`git --version`__
+#### 3.1. __`git --version`__
   - Xem phiên bản hiện tại đang được cài trên máy tính
 
-- __`git init`__
+#### 3.2.__`git init`__
   - Khởi tạo repository (kho lưu trữ) cho dự án.
   - Chạy câu lệnh trong thư mục gốc của dự án.
   - Mỗi một dự án phải khởi tạo 1 repository (kho lưu trữ) cho dữ án
   - Thư mục .git là một thư mục ẩn nằm trong thư mục gốc của mỗi repository Git trên máy tính của bạn. Đây là nơi Git lưu trữ tất cả dữ liệu quan trọng để theo dõi các thay đổi trong mã nguồn, như lịch sử các lần commit, cấu hình của repository, và thông tin khác liên quan đến phiên bản của dự án.
-- __`git status`__
+#### 3.3. __`git status`__
   - Để xem trạng thái của những file đã được thay đổi trong dự án.
-- __`git add ten_file`__ hoặc __`git add .`__
+#### 3.4. __`git add ten_file`__ hoặc __`git add .`__
   - Chuyển các file đã thay đổi từ vùng Working sang vùng Staging
   - Staging area có tác dụng sắp xếp lại những file đã thêm vào.
   - __`git add .`__ để đẩy tất cả các file ở vùng __`working directory`__ sang vùng __`Staging area`__
-- __`git commit -m "Nội dung… "`__
+#### 3.5. __`git commit -m "Nội dung… "`__
   - Chuyển các file từ vùng Staging sang vùng Repository
   - Repository có tác dụng tạo ra 1 phiên bản mới.
-- __`git log`__
+#### 3.6. __`git log`__
   - Xem lại lịch sử các commit.
   - ommit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới.
-- __`git show commit_id`__
+#### 3.7. __`git show commit_id`__
   - Dùng để xem chi tiết một commit.
-- __`git diff`__
+#### 3.8. __`git diff`__
   - Xem sự thay đổi của một file sau khi chỉnh sửa.
   - Điều kiện là file đó vẫn đang ở khu vực Working.
-- __`git checkout -- ten_file`__
+#### 3.9. __`git checkout -- ten_file`__
   - Bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu.
   - Áp dụng cho file đang ở vùng Working.
-- __`gitk`__
+#### 3.10. __`gitk`__
   - Mở dashboard xem trực quan hơn.
-- __`git reset ten_file`__
+#### 3.11. __`git reset ten_file`__ hoặc __`git reset .`__
   - Chuyển file đó từ vùng Staging trở lại vùng Working.
-- __`git reset --soft commit_id`__
+  - __`git reset .`__ chuyển __tất cả__ các file từ vùng Staging trở lại vùng Working.
+#### 3.12. __`git reset --soft commit_id`__
   - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit.
   - Tức là từ Repository về lại Staging.
-- __`git reset --mixed commit_id`__
+#### 3.13. __`git reset --mixed commit_id`__
   - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git add.
   - Tức là từ Repository về lại Working.
