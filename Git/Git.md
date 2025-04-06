@@ -82,10 +82,23 @@
 
 
 ## **4. Nhánh trong __`Git`__**
-```
-           🔵A1──A2──A3──A4   (Nhánh A)
-          /                    
-🟢M1──M2──M3──M4──────M5──M6  (Master)
-           \          /
-            └──🟠B1──┘        (Nhánh B)
-```
+
+![Nhánh trong Git](../images/nhanhInGit.png)
+
+#### 4.1. __`git branch`__
+  - Xem danh sách các nhánh.
+
+#### 4.2. __`git checkout -b ten_nhanh`__
+  - Tạo một nhánh mới và chuyển sang nhánh đó.
+  - Nhân bản nhánh chính thành một nhánh mới với toàn bộ mã nguồn giống như nhánh chính.
+
+#### 4.3. __`git checkout ten_nhanh`__
+  - Tạo một nhánh mới và chuyển sang nhánh đó.
+
+#### 4.4. __`git merge ten_nhanh`__
+  - Để hợp nhất nhánh khác vào trong nhánh hiện tại.
+  - Phải đứng từ nhánh mà đang muốn kéo code về
+
+#### 4.5. __`git branch -D ten_nhanh`__
+  - Để xóa nhánh.
+  - Phải đứng từ nhánh khác để xóa nhánh mà ta đang cần xóa
