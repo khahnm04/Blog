@@ -56,7 +56,7 @@
   - Repository có tác dụng tạo ra 1 phiên bản mới.
 #### 3.6. __`git log`__
   - Xem lại lịch sử các commit.
-  - ommit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới.
+  - commit mới sẽ hiện bên trên, commit cũ sẽ hiện bên dưới.
 #### 3.7. __`git show commit_id`__
   - Dùng để xem chi tiết một commit.
 #### 3.8. __`git diff`__
@@ -65,6 +65,7 @@
 #### 3.9. __`git checkout -- ten_file`__
   - Bỏ đi những thay đổi của file, để file đó trở về như lúc ban đầu.
   - Áp dụng cho file đang ở vùng Working.
+  - khôi phục file tên_file về trạng thái trong lần __commit gần nhất (latest commit) trên nhánh hiện tại__. Nói cách khác, nó __xóa toàn bộ thay đổi chưa commit__ trong file đó và làm cho file quay trở lại trạng thái như khi bạn vừa mới commit lần cuối.
 #### 3.10. __`gitk`__
   - Mở dashboard xem trực quan hơn.
 #### 3.11. __`git reset ten_file`__ hoặc __`git reset .`__
@@ -73,6 +74,18 @@
 #### 3.12. __`git reset --soft commit_id`__
   - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git commit.
   - Tức là từ Repository về lại Staging.
+  - __`commit_id`__ là id của phiên bản cũ hơn so với phiên bản cần chuyển lại về vùng staging
 #### 3.13. __`git reset --mixed commit_id`__
   - Chuyển từ trạng thái đã commit về trạng thái trước lúc chạy lệnh git add.
   - Tức là từ Repository về lại Working.
+  - __`commit_id`__ là id của phiên bản cũ hơn so với phiên bản cần chuyển lại về vùng staging
+
+
+## **4. Nhánh trong __`Git`__**
+```
+           🔵A1──A2──A3──A4   (Nhánh A)
+          /                    
+🟢M1──M2──M3──M4──────M5──M6  (Master)
+           \          /
+            └──🟠B1──┘        (Nhánh B)
+```
