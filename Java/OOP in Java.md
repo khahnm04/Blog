@@ -13,8 +13,36 @@
   > Bạn cần xây dựng một lớp là Person để mô phỏng con người thì khi đó một đối tượng của lớp Person là “Nguyễn Văn Tèo” chính là một thực thể, một đối tượng của lớp Person.
 
 ## **2. __Attribute__ và __Method__**
-![OOP](../images/OOP1.png)
 - Để mô tả thông tin của một lớp (Class), bạn cần thêm các thuộc tính (Attribute) và phương thức (Method).
 
 - Thuộc tính (Attribute) là những thông tin mà lớp sở hữu. Ví dụ: Một khách hàng có thể có các thông tin như họ tên, mã khách hàng, giới tính, số điện thoại, email,...
 - Phương thức (Method) là những hành động mà đối tượng của lớp có thể thực hiện. Ví dụ: Khách hàng có thể đăng nhập, đăng ký,...
+- Ví dụ: Lớp Person có các thuộc tính và phương thức sau
+  ```
+   _____________________________________          ________________
+  | Thuộc tính       | Phương thức      |        |   Person       |
+  |__________________|__________________|------->|________________|
+  | Tên              | Đi lại           |------->| Tên            |
+  | Ngày sinh        | Ăn uống          |        | Ngày sinh      |
+  | Số điện thoại    | Giao tiếp        |        | Địa chỉ        |
+  | Địa chỉ          |                  |        | Số điện thoại  |
+  |__________________|__________________|        |________________|
+                                                 | Đi lại()       |
+                                                 | Ăn uống()      |
+                                                 | Giao tiếp()    |
+                                                 |________________|
+  ```
+
+## **3. Xây dựng lớp**
+- Trong class sẽ chứa các member có thể là thuộc tính hoặc phương thức. Khi khai bao các member này thì bạn phải chỉ ra __access_specifier__ cho các thành phần này.
+
+- Các access_specifier (tạm dịch là quyền truy cập): __`public`__, __`protected`__, __`private`__.
+- Cú pháp:
+  ```java
+  class class_name{
+      access_specifier1:
+      member1, member2...
+      access_specifier2:
+      member1, member2...
+  };
+  ```
