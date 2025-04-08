@@ -12,7 +12,7 @@
   > Ví dụ:
   > Bạn cần xây dựng một lớp là Person để mô phỏng con người thì khi đó một đối tượng của lớp Person là “Nguyễn Văn Tèo” chính là một thực thể, một đối tượng của lớp Person.
 
-## **2. __Attribute__ và __Method__**
+## **2. __Thuộc tính (Attribute)__ và phương thức (__Method__)**
 - Để mô tả thông tin của một lớp (Class), bạn cần thêm các thuộc tính (Attribute) và phương thức (Method).
 
 - Thuộc tính (Attribute) là những thông tin mà lớp sở hữu. Ví dụ: Một khách hàng có thể có các thông tin như họ tên, mã khách hàng, giới tính, số điện thoại, email,...
