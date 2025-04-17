@@ -1,9 +1,9 @@
 # **🎯 JavaScript**
 📚 __Nội dung:__
 
-&emsp;&emsp; [__1. Giới thiệu về ngôn ngữ lập trình JavaScript__](#id)
+&emsp;&emsp; [__1. Giới thiệu về ngôn ngữ lập trình JavaScript__](#1-giới-thiệu-về-ngôn-ngữ-lập-trình-javascript)
 
-&emsp;&emsp; [__2. Variables (Biến)__](#variables)
+&emsp;&emsp; [__2. Variables (Biến)__](#2-variables-biến)
 
 &emsp;&emsp;__3. Operators (Toán tử)__
 
