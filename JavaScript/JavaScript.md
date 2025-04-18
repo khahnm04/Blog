@@ -5,7 +5,7 @@
 
 &emsp;&emsp; [__2. Variables (Biến)__](#2-variables-biến)
 
-&emsp;&emsp;__3. Operators (Toán tử)__
+&emsp;&emsp; [__3. Operators (Toán tử)__](#3-operators-toán-tử)
 
 ## **1. Giới thiệu về ngôn ngữ lập trình `JavaScript`**
 - __`Javascript`__ (viết tắt : JS) là một ngôn ngữ lập trình kịch bản dựa vào các đối tượng có sẵn hoặc do lập trình viên tự định nghĩa.
@@ -47,6 +47,7 @@
   var 123tenbien = 10; // Sai do số đứng đầu
   var -tenbien = 10; // Sai do có ký tự
   ```
+
 ## **3. Operators (Toán tử)**
 ### **3.1. Arithmetic (Toán tử số học)**
 - Toán tử số học là toán tử dùng để thực hiện các phép toán số học.
@@ -85,3 +86,17 @@
   | <       | a < b   | • Trả về true nếu a nhỏ hơn b. <br> • Trả về false nếu b nhỏ hơn a. |
   | >=      | a >= b  | • Trả về true nếu a lớn hơn hoặc bằng b. <br> • Trả về false nếu a nhỏ hơn b. |
   | <=      | a <= b  | • Trả về true nếu a nhỏ hơn hoặc bằng b. <br> • Trả về false nếu a lớn hơn b. |
+  | ==      | a == b  | • Trả về true nếu a bằng b. <br> • Trả về false nếu a khác b. <br> • Không nghiêm ngặt. |
+  | ===     | a === b | • Trả về true nếu giá trị của a bằng giá trị của b và a, b phải cùng kiểu dữ liệu. <br> • nghiêm ngặt. |
+  | !=      | a != b  | • Trả về true nếu a khác b. <br> • Trả về false nếu a bằng b. <br> • Không nghiêm ngặt. |
+  | !==     | a !== b | • Trả về true nếu giá trị của a khác giá trị của b và a, b phải khác kiểu dữ liệu. <br> • nghiêm ngặt. |
+### **3.4. Logical (Toán tử logic)**
+- Toán tử logic là toán tử kết nối hai hay nhiều biểu thức, dùng để kiểm tra mối quan hệ logic giữa các biểu thức.
+
+- Kết quả cuối cùng phụ thuộc vào giá trị của từng biểu thức và loại toán tử logic.
+- Danh sách các toán tử logic:
+  | Toán tử | Mô tả         |
+  |:-------:|---------------|
+  |  &&     | • __AND__: trả về kết quả là true khi tất cả toán hạng đều true. |
+  |  &#124;&#124;   | • __AND__: trả về kết quả là true khi tất cả toán hạng đều true. |
+  |  !      | • __NOT__: Chuyển đổi giá trị của toán hạng từ true sang false hoặc từ false sang true. |
