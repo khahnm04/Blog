@@ -100,3 +100,41 @@
   |  &&     | • __AND__: trả về kết quả là true khi tất cả toán hạng đều true. |
   |  &#124;&#124;   | • __AND__: trả về kết quả là true khi tất cả toán hạng đều true. |
   |  !      | • __NOT__: Chuyển đổi giá trị của toán hạng từ true sang false hoặc từ false sang true. |
+
+## **4. Data Types (Kiểu dữ liệu)**
+### **4.1. Kiểu dữ liệu nguyên thủy (Primitive Data)**
+- Có 6 kiểu: `Number`, `String`, `Boolean`, `Undefined`, `Null`, `Symbol`.
+
+- Kiểu `Number`:
+  - Là kiểu dữ liệu dạng số.
+    
+  - Hai loại số là: số nguyên và số thực.
+  - 3 số đặc biệt là:
+    - Infinity: là số dương vô cùng.
+      
+    - -Infinity: là số âm vô cùng.
+    - NaN: là viết tắt của Not a Number, những trường hợp tính toán sai hoặc kết quả của một phép tính không xác định.
+   
+- Kiểu `String`:
+  - Là kiểu dữ liệu dùng để biểu diễn chữ, văn bản, đoạn văn bản,...
+    
+  - Có 3 cách để biểu diễn string:
+    - Dùng dấu nháy đơn: '
+      
+    - Dùng dấu nháy kép: "
+    - Dùng dấu backtick: `
+
+- Kiểu `Boolean`:
+  - Là kiểu dữ liệu __logic__ chỉ bao gồm 2 giá trị:
+    - `true` (đúng, chính xác)
+      
+    - `false` (sai, không chính xác)
+   
+- Kiểu `Undefined`:
+  - Là kiểu dữ liệu mà khi __khai báo ra một biến__ và __không gán giá trị__ thì kết quả trả về là `undefined`.
+ 
+- Kiểu `Null`:
+  - Là kiểu dữ liệu đặc biệt, chỉ bao gồm một __giá trị là `null`__ (không biết giá trị, không có giá trị).
+ 
+- Kiểu `Symbol`:
+  - Symbol là một kiểu dữ liệu nguyên thủy dùng để tạo ra các __giá trị duy nhất (unique value)__ và __bất biến (immutable)__.
