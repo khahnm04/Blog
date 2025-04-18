@@ -7,6 +7,8 @@
 
 &emsp;&emsp; [__3. Operators (Toán tử)__](#3-operators-toán-tử)
 
+&emsp;&emsp; [__4. Data Types (Kiểu dữ liệu)__](#4-data-types-kiểu-dữ-liệu)
+
 ## **1. Giới thiệu về ngôn ngữ lập trình `JavaScript`**
 - __`Javascript`__ (viết tắt : JS) là một ngôn ngữ lập trình kịch bản dựa vào các đối tượng có sẵn hoặc do lập trình viên tự định nghĩa.
   
