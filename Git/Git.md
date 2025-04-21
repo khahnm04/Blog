@@ -35,6 +35,7 @@
   > **Ví dụ:**
   >   - Working directory (Thư mục làm việc):
   >     Bạn bắt đầu code cả trang Giới thiệu và trang Liên hệ trong IDE của mình (VS Code, IntelliJ,...). Đây là nơi bạn trực tiếp chỉnh sửa nội dung các file HTML.
+  >     
   >   - Staging area (Khu vực sắp xếp):
   >     Sau khi code xong, bạn cảm thấy cả hai trang đều tạm ổn, nên dùng lệnh __`git add`__ để đưa cả file gioi-thieu.html và file lien-he.html vào vùng staging. Đây là nơi bạn chuẩn bị mọi thứ trước khi "đóng gói" lại.
   >   - Khách hàng kiểm tra và phản hồi. Họ bảo rằng trang Giới thiệu đã OK, không cần chỉnh sửa gì. Nhưng trang Liên hệ thì chưa ổn, cần sửa lại nội dung.
