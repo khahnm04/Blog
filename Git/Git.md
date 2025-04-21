@@ -1,4 +1,13 @@
-# **Git**
+# **🎯 Git**
+📚 __Nội dung:__
+
+&emsp;&emsp; [__1. Giới thiệu về Git__](#1-giới-thiệu-về-git)
+
+&emsp;&emsp; [__2. Các thuật ngữ trong Git__](#2-các-thuật-ngữ-trong-git)
+
+&emsp;&emsp; [__3. Các câu lệnh Git__](#3-các-câu-lệnh-git)
+
+&emsp;&emsp; [__4. Nhánh trong Git__](#4-nhánh-trong-git)
 
 ## **1. Giới thiệu về __`Git`__**
 - Git là một hệ thống __quản lý phiên bản__
