@@ -12,3 +12,4 @@
   - Geeks for Geeks: https://www.geeksforgeeks.org/stream-in-java/
   - Baeldung: https://www.baeldung.com/java-8-streams
   - DigitalOcean: https://www.digitalocean.com/community/tutorials/java-8-stream
+  - Oracle: https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
