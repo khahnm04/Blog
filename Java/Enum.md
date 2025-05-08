@@ -1,6 +1,5 @@
 ## 1. Tiếng Việt
 
--  TBin: https://tbins-organization.gitbook.io/java-core/appendix/enum-types
 -  GP Coder: https://gpcoder.com/2473-enum-trong-java/
 -  Viblo: https://viblo.asia/p/java-enum-Az45bN2w5xY
 -  Kungfutech: https://viblo.asia/p/java-enum-Az45bN2w5xY
@@ -9,6 +8,7 @@
 -  Toidicode: https://toidicode.com/enum-trong-java-435.html
 -  Javarush: https://javarush.com/vi/groups/posts/vi.2260.enum-trong-java-v-d-thc-t-thm-hm-to-v-phng-thc
 -  CodeGym: https://codegym.vn/blog/enum-java-la-gi-va-cach-su-dung/
+-  TBin: https://tbins-organization.gitbook.io/java-core/appendix/enum-types
 
 ## 2. Tiếng anh
 
