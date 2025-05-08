@@ -4,7 +4,7 @@
   - CodeLearn: https://codelearn.io/sharing/stream-xu-ly-du-lieu-the-nao-trong-java
   - Viblo: https://viblo.asia/p/streams-in-java-8-dWrvwd5gRw38
   - Viblo: https://viblo.asia/p/stream-api-trong-java-8-Ny0VGdKz4PA
-  - TOPDev: https://topdev.vn/blog/cung-tim-hieu-ve-stream-trong-java-8/
+  - TopDev: https://topdev.vn/blog/cung-tim-hieu-ve-stream-trong-java-8/
   - Stanford: https://stanford.com.vn/kien-thuc-lap-trinh/tin-chi-tiet/cagId/27/id/24608/tim-hieu-stream-api-la-gi-stream-api-trong-java
   - TBin: https://tbins-organization.gitbook.io/java-core/appendix/stream-api
 
