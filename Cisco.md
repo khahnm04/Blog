@@ -54,21 +54,14 @@
    no shutdown
   exit
   ```
-- Cấu hình cổng Fa0/2 (access cho PC1, VLAN 10):
+- Cấu hình cho tất cả các cổng từ Fa0/2 -> Fa0/24 (access cho PC1, VLAN 10):
   ```
-  interface FastEthernet0/2
-   switchport mode access
-   switchport access vlan 10
-   no shutdown
-  exit
-  ```
-- Cấu hình cổng Fa0/3 (access cho PC3, VLAN 10):
-  ```
-  interface FastEthernet0/3
-   switchport mode access
-   switchport access vlan 10
-   no shutdown
-  exit
+  conf t
+   interface range FastEthernet0/2 - 24
+    switchport mode access
+    switchport access vlan 10
+    no shutdown
+   exit
   ```
 
 ##### Trên Switch2
@@ -81,13 +74,14 @@
    no shutdown
   exit
   ```
-- Cấu hình cổng Fa0/2 (access cho PC2, VLAN 20):
+- Cấu hình cho tất cả các cổng từ Fa0/2 -> Fa0/24 (access cho PC2, VLAN 20):
   ```
-  interface FastEthernet0/2
-   switchport mode access
-   switchport access vlan 20
-   no shutdown
-  exit
+  conf t
+   interface range FastEthernet0/2 - 24
+    switchport mode access
+    switchport access vlan 10
+    no shutdown
+   exit
   ```
 
 ---
